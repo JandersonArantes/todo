@@ -7,8 +7,8 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": false,
+    "noImplicitReturns": false, // Alterado para true, para que funcione o código: form.controls.title.invalid
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
@@ -22,7 +22,8 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    // "strictPropertyInitialization": false // Foi adicionado. Senão vai informar que o código precisa de inicializador:  public form: FormGroup;
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

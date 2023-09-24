@@ -1,1 +1,128 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    /* Ocupar da tela em 100% */
+    height: 100vh;
+    /* Display para posicionar os elementos na vertical */
+    display: flex;
+    /* Com os dois alinhamentos abaixo, os elementos serão centralizados na horizontal e vertical. */
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    /* Se o browser não permitir background gradiente, esta será a cor do background. */
+    background: #3023ae; 
+    /* Mozila */
+    background: -moz-linear-gradient(60deg, #3023ae 0%, #c86dd7 100%);
+    /* Chrome e Edge */
+    background: -webkit-linear-gradient(60deg, #3023ae 0%, #c86dd7 100%);
+    /* Para o browser que tiver esse linear-gradient. */
+    background: linear-gradient(60deg, #3023ae 0%, #c86dd7 100%);
+    /* Este é para browser mais antigo da Microsoft. Como o Internet Explorer. */
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#3023ae', endColorstr='#c86dd7', GradientType-1);
+}
+
+button {
+    /* Altera o cursor para o ícone de uma mão, apontando com um dedo. */
+    cursor: pointer;
+}
+
+ul {
+    /* Sempre alinhado à esqueda. */
+    text-align: left;
+    /* margin: a distância entre um elemento e outro. */
+    margin: 10px;
+    /* padding: a distância entre o conteúdo e a margem. */
+    padding: 10px;
+    /* Para retirar as marcações de lista. */
+    list-style: none;
+    /* background: branco */
+    background: #fff;
+    /* Arredondar um pouco a borda. */
+    border-radius: 10px;
+    /* shadow: é uma sombra. */
+    /* rgba: 0, 0, 0 é preto e a (alpha) = 0.39 é uma transparência de 39% */
+    -webkit-box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
+    box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
+
+}
+
+li {
+    padding: 15px;
+    margin: 10px;
+    /* lem: é um tamanho pequeno para fonte. */
+    font-size: 1em;
+    font-style: italic;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+li>button {
+    border: none;
+    background-color: #fff;
+    font-size: 1em; 
+    float: right;
+    opacity: 0.6;
+    transition: opacity 1s;
+}
+
+/* hover: quando passar o ponteiro do mouse no botão. */
+li>button:hover {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.title {
+    /* Dancing Script; é uma fonte manuscrita.
+    cursive; estilo de escrita manual. */
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    font-size: 5em;
+    /* "em" em vez de "px", é um tamanho relativo ao tamanho do texto padrão da página. */
+    text-shadow: 3px 5px #000;
+}
+
+.text-center {
+    /* Para alinhar texto no centro */
+    text-align: center;
+}
+
+/* Agora a classe para o botão */
+.button {
+    background-color: #000;
+    border: none;
+    /* top, right, bottom e left */
+    padding: 20px;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: 100;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#modal {
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
+    box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);   
+}
+
+input {
+    width: 100%;
+    line-height: 50px;
+    text-indent: 10px;
+    font-size: 1.2em;
+}
+
+.danger {
+    background-color: #ff0000;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 10px;
+}
